@@ -3,7 +3,10 @@ import React from "react";
 
 const PictureDivider = () => {
   return (
-    <section className="relative overflow-hidden h-96 lg:h-100 xl:h-130 w-full flex justify-center items-end">
+    <section
+      id="csr-divide"
+      className="relative overflow-hidden h-96 lg:h-100 xl:h-130 w-full flex justify-center items-end"
+    >
       <Image
         src="/hero-bg.jpg"
         fill

@@ -5,6 +5,7 @@ import SocialSection from "@/components/otherpages/SocialSection";
 import PictureDivider from "@/components/otherpages/PictureDivider";
 import Story from "@/components/homePage/Story";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Corporate Social Responsibility",
@@ -22,19 +23,23 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main>
-      <Hero
-        title="Advancing Sustainable Trade, Practically"
-        subtitle="We focus on real, measurable actions: financing farmers, improving yields, and simplifying
+    <>
+      <Navbar />
+      <main>
+        <Hero
+          title="Advancing Sustainable Trade, Practically"
+          subtitle="We focus on real, measurable actions: financing farmers, improving yields, and simplifying
 access to markets."
-      />
-      {/* <ReusableStats balls={stats} className="relative" /> */}
-      <SustainableSection />
-      <PictureDivider />
-      <SocialSection />
-      <Story />
-      <Footer />
-    </main>
+          link="#csr-divide"
+        />
+        {/* <ReusableStats balls={stats} className="relative" /> */}
+        <SustainableSection />
+        <PictureDivider />
+        <SocialSection />
+        <Story />
+        <Footer />
+      </main>
+    </>
   );
 };
 

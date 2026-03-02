@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/otherpages/ContactSection";
 import React from "react";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
+      <Navbar />
       <ContactSection />
       <Footer />
     </>

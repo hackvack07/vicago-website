@@ -8,6 +8,7 @@ import VisionMissionStack from "@/components/otherpages/ScrollValues";
 import OurJourney from "@/components/otherpages/OurJourney";
 import DupHero from "@/components/otherpages/HeroDup";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
 const Aboutpage = () => {
   return (
     <>
+      <Navbar />
       <main className="relative w-full overflow-y-hidden overflow-x-hidden bg-white">
         <DupHero
           title="Quality You Can Trace to the Source"

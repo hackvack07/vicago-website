@@ -19,20 +19,24 @@ export const metadata: Metadata = {
 };
 
 import JsonLd, { organizationSchema } from "@/components/JsonLd";
+import Navbar from "@/components/Navbar";
 
 export default function App() {
   return (
-    <main className="relative w-full overflow-x-hidden overflow-y-hidden ">
-      <JsonLd data={organizationSchema} />
-      <Hero />
-      <Partners />
-      <About />
-      <Mission />
-      <Values />
-      <StackingCardsSection />
-      <TestimonialCarousel />
-      <Story />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main className="relative w-full overflow-x-hidden overflow-y-hidden ">
+        <JsonLd data={organizationSchema} />
+        <Hero />
+        <Partners />
+        <About />
+        <Mission />
+        <Values />
+        <StackingCardsSection />
+        <TestimonialCarousel />
+        <Story />
+        <Footer />
+      </main>
+    </>
   );
 }

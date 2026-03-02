@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useTransition } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,6 +20,7 @@ const Navbar = () => {
 
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [, startTransition] = useTransition();
 
   useEffect(() => {
     const onScroll = () => {
@@ -45,17 +45,11 @@ const Navbar = () => {
 
   // Close menu on route change
   useEffect(() => {
-    setMenuOpen(false);
-  }, [pathname]);
+    startTransition(() => {
+      setMenuOpen(false);
+    });
+  }, [pathname, startTransition]);
 
-  const isActive = (href: string) => {
-    if (href === "/") return pathname === "/";
-    return pathname === href || pathname.startsWith(href + "/");
-  };
-
-  /**
-   * COLORS LOGIC
-   */
   const textColor = scrolled
     ? "text-gray-500"
     : isHome
@@ -81,13 +75,12 @@ const Navbar = () => {
         }`}
       >
         <nav
-          className={`w-full max-margin py-4 flex items-center justify-between transition-colors duration-300 ${
-            menuOpen ? "text-gray-800" : textColor
-          }`}
+          className={`w-full max-margin py-4 flex items-center justify-between transition-colors duration-300 
+            ${menuOpen ? "text-gray-400" : textColor}`}
         >
-          <a href="/">
+          <Link href="/">
             <Image src="/logo.png" alt="logo" width={90} height={18} />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex gap-8 text-base font-normal">
@@ -95,9 +88,7 @@ const Navbar = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className={
-                  isActive(link.href) ? "text-vgreen font-semibold" : ""
-                }
+                className={`hover:text-vgreen transition-colors duration-200 ${pathname === link.href ? "text-vgreen font-semibold" : " "}`}
               >
                 {link.label}
               </Link>
@@ -233,4 +224,7 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+// wrap in React.memo to avoid re‑rendering when parent (layout) updates
+// unless one of the internal hooks/state values actually changed
+
+export default React.memo(Navbar);
