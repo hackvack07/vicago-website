@@ -25,9 +25,9 @@ const BlogSection = () => {
           />
         </div>
 
-        <button className="w-full inline-flex justify-center items-center gap-2 animate-bounce text-sm text-gray-400">
+        {/* <button className="w-full inline-flex justify-center items-center gap-2 animate-bounce text-sm text-gray-400">
           click to see more <ArrowDown size={16} />
-        </button>
+        </button> */}
       </div>
     </section>
   );

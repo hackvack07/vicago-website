@@ -179,7 +179,7 @@ export default function Footer() {
                 {OfficeData.map((item, i) => (
                   <li
                     key={i}
-                    className="text-gray-800 cursor-pointer transition-colors leading-6"
+                    className="text-gray-800 transition-colors leading-6"
                   >
                     {item.location} <br />
                     <span className="text-gray-400 text-xs leading-1 ">

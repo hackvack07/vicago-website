@@ -4,6 +4,7 @@ import SustainableSection from "@/components/homePage/SustainableSection";
 import BlogHero from "@/components/otherpages/BlogHero";
 import BlogSection from "@/components/otherpages/BlogSection";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -21,11 +22,14 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main>
-      <BlogHero />
-      <BlogSection />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <BlogHero />
+        <BlogSection />
+        <Footer />
+      </main>
+    </>
   );
 };
 

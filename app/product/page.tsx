@@ -4,6 +4,7 @@ import TestimonialCarousel from "@/components/homePage/Testimonial";
 import DupHero from "@/components/otherpages/HeroDup";
 import WhyPartner from "@/components/otherpages/WhyPartner";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Our Products",
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
 const Products = () => {
   return (
     <>
+      <Navbar />
       <DupHero
         title="From Source to Market, Done Right"
         subtitle="We manage agricultural commodities end-to-end, ensuring quality, consistency, and

@@ -98,10 +98,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <PageTransition>
-          <Navbar />
-          {children}
-        </PageTransition>
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );

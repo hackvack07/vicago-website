@@ -13,7 +13,7 @@ export default function BlogCard({
   src?: string;
 }) {
   return (
-    <div className="space-y-2 group">
+    <div className="space-y-2 group tc-card">
       <Image
         src={src}
         alt={title}

@@ -57,7 +57,7 @@ export default function Mission() {
               src="/images/hero-bg-2.jpg"
               alt="Mission background"
               fill
-              className="object-cover"
+              className="object-cover w-auto h-auto"
               loading="eager"
             />
           </div>

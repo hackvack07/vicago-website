@@ -7,7 +7,7 @@ const page = ({ params }: { params: { id: string } }) => {
   // For no w we render the provided article for any id.
   return (
     <main className="min-h-screen  text-emerald-950">
-      <article className="max-out relative px-6 pt-28 pb-20">
+      <article className="max-margin relative pt-28 pb-20">
         <header className="space-y-6">
           <div className="relative rounded-2xl overflow-hidden shadow-lg">
             <Image
@@ -40,9 +40,9 @@ const page = ({ params }: { params: { id: string } }) => {
             </div>
 
             <div className="flex items-center gap-3">
-              <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-vgreen text-white hover:bg-vgreen/80">
+              {/* <button className="inline-flex items-center gap-2 px-3 py-2 rounded-md bg-vgreen text-white hover:bg-vgreen/80">
                 <Share2 size={16} /> Share
-              </button>
+              </button> */}
             </div>
           </div>
         </header>
@@ -156,7 +156,7 @@ const page = ({ params }: { params: { id: string } }) => {
                 <div>
                   <p className="font-medium">Canadian Office</p>
                   <p className="text-xs">
-                    556 Market Avenue, Toronto, Canada, M6B 0B1
+                    556 Marlee Avenue, Toronto, Canada, M6B 0B1
                   </p>
                 </div>
               </div>

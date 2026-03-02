@@ -80,6 +80,10 @@ button {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .clip-mask {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }

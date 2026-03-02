@@ -50,7 +50,9 @@ const SocialEach = ({ item }: any) => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-start md:items-center py-6 border-t-2 border-gray-200 gap-6">
       <div className="flex flex-col items-start gap-4 flex-1">
-        <h3 className="text-2xl md:text-3xl font-medium text-vgbrown">{item.title}</h3>
+        <h3 className="text-2xl md:text-3xl font-medium text-vgbrown">
+          {item.title}
+        </h3>
         <p className="text-sm font-light text-gray-500 leading-relaxed max-w-xl">
           {item.description}
         </p>

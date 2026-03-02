@@ -6,15 +6,18 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Button from "../ui/Button";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Hero({
   title,
   subtitle,
+  link,
 }: {
   title: string;
   subtitle: string;
+  link: string;
 }) {
   const heroRef = useRef<HTMLDivElement>(null);
 
@@ -58,7 +61,7 @@ export default function Hero({
           <div className="text-black/90 flex flex-col md:flex-row justify-between items-start md:items-end w-full mb-15">
             <div className="flex flex-col items-start space-y-6">
               <div>
-                <h1 className="hero-animate text-5xl md:text-5xl lg:text-6xl lg:leading-16 max-w-xl font-normal font-grotesque leading-tight">
+                <h1 className="hero-animate text-vgreen text-5xl md:text-5xl lg:text-6xl lg:leading-16 max-w-xl font-normal font-grotesque leading-tight">
                   {title}
                 </h1>
               </div>
@@ -67,9 +70,12 @@ export default function Hero({
                 {subtitle}
               </p>
             </div>
-            <button className="inline-flex justify-center items-center gap-2 animate-bounce text-sm text-gray-400 mt-6 md:mt-0">
+            <Link
+              href={link}
+              className="inline-flex justify-center items-center gap-2 animate-bounce text-sm text-gray-400 mt-6 md:mt-0"
+            >
               Explore more <ArrowDown size={16} />
-            </button>
+            </Link>
           </div>
         </div>
         <div className="hero-image w-full relative flex items-center aspect-video justify-center overflow-hidden h-100  rounded-xl">

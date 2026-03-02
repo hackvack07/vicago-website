@@ -10,7 +10,7 @@ export default function AllProducts() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       // 1️⃣ Heading — strong entrance
-      gsap.from(".sustain-heading", {
+      gsap.from(".product-heading", {
         y: 80,
         opacity: 0,
         scale: 0.96,

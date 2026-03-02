@@ -111,7 +111,6 @@ const ContactSection = () => {
             setTimeout(() => setSubmitted(false), 3000);
           },
           (error) => {
-            console.log("FAILED...", error);
             setFailed(true);
             setLoading(false);
             setTimeout(() => setFailed(false), 5000);
@@ -201,7 +200,7 @@ const ContactSection = () => {
                 Canadian Office
               </h4>
               <p className="text-sm text-gray-600 leading-relaxed">
-                556 Market Avenue
+                556 Marlee Avenue
                 <br />
                 Toronto, Canada
                 <br />

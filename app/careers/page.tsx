@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import CareersHero from "@/components/otherpages/CareersHero";
 import CareersOpenPositions from "@/components/otherpages/CareersOpenPositions";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
   title: "Careers",
@@ -19,11 +20,14 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main>
-      <CareersHero />
-      <CareersOpenPositions />
-      <Footer />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <CareersHero />
+        <CareersOpenPositions />
+        <Footer />
+      </main>
+    </>
   );
 };
 

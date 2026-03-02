@@ -16,7 +16,7 @@ const CeoSpeech = () => {
         Akinjide Agosile MBA, ACCA
       </p>
       <p className="text-sm text-gray-600 text-center mt-1">
-        CEO, Vicago North America
+        Country lead, Canada
       </p>
     </div>
   );
