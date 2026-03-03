@@ -18,7 +18,7 @@ const cards = [
     title: "Our Values",
     text: "To create long-term impact with clarity and intention. We understand that success isn't just about metrics—it's about creating positive change that resonates beyond numbers.",
     bg: "bg-vgbrown text-creamy",
-    image: "/careers/value.jpg",
+    image: "/careers/scroll-value.jpg",
   },
 ];
 

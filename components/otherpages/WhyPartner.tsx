@@ -46,7 +46,7 @@ const WhyPartner = () => {
     >
       <div className="relative z-10 h-full flex flex-col justify-center gap-20 items-center max-margin py-20">
         <div className="w-full text-black/80 gap-6 flex flex-col justify-center items-center max-w-3xl">
-          <h2 className=" product-heading max-w-4xl text-5xl md:text-6xl mb-0 font-normal text-vgreen">
+          <h2 className=" text-center product-heading max-w-4xl text-5xl md:text-6xl mb-0 font-normal text-vgreen">
             Why partner with us
           </h2>
           <p className="product-text text-base text-center text-gray-500">

@@ -20,7 +20,7 @@ const DATA = [
     image: "/value-bg.jpg",
   },
   {
-    title: "Soyabeans",
+    title: "Soybeans",
     subtitle:
       "Premium soybeans ideal for oil extraction and protein production.",
     image: "/images/about-soya.webp",
@@ -105,8 +105,8 @@ export default function StackingCardsSection() {
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
-        <div className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <div className="p-4">
+        <div className="relative w-full mx-4 md:max-w-xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <div className="p-2 md:p-4">
             {/* Card images */}
             <div className="relative aspect-video overflow-hidden rounded-xl">
               {DATA.map((item, i) => (
@@ -126,7 +126,7 @@ export default function StackingCardsSection() {
             </div>
 
             {/* Text */}
-            <div className="relative w-full py-6">
+            <div className="relative w-full py-2 md:py-6">
               <div className="relative w-full h-22 overflow-hidden ">
                 {DATA.map((item, i) => (
                   <div
@@ -134,10 +134,12 @@ export default function StackingCardsSection() {
                     className={`slide-${i} absolute inset-0 flex flex-col items-center justify-center text-center bg-white`}
                     style={{ zIndex: DATA.length + i }}
                   >
-                    <h2 className="text-3xl text-gray-800 mb-2">
+                    <h2 className="text-lg md:text-3xl text-gray-800 mb-2">
                       {item.title}
                     </h2>
-                    <p className="text-gray-600 max-w-xl">{item.subtitle}</p>
+                    <p className="text-sm md:text-base text-gray-600 max-w-xl">
+                      {item.subtitle}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -145,7 +147,7 @@ export default function StackingCardsSection() {
               <div className="mt-6 flex justify-center">
                 <a
                   href="/contact"
-                  className="bg-white text-vgbrown px-3 py-2 border border-vgbrown/80 rounded-full text-sm font-semibold hover:text-white hover:bg-vgbrown"
+                  className="bg-white text-vgbrown px-1.5 py-1 border border-vgbrown/80 rounded-full text-xs md:text-sm  font-semibold hover:text-white hover:bg-vgbrown"
                 >
                   Contact us
                 </a>
