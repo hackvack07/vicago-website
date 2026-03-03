@@ -108,8 +108,8 @@ const Navbar = () => {
             <style>{`
               .hamburger-btn {
                 position: relative;
-                width: 30px;
-                height: 30px;
+                width: 40px;
+                height: 40px;
                 display: flex;
                 align-items: center;
                 justify-content: center;

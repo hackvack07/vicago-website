@@ -147,7 +147,7 @@ export default function StackingCardsSection() {
               <div className="mt-6 flex justify-center">
                 <a
                   href="/contact"
-                  className="bg-white text-vgbrown px-1.5 py-1 border border-vgbrown/80 rounded-full text-xs md:text-sm  font-semibold hover:text-white hover:bg-vgbrown"
+                  className="bg-white text-vgbrown px-1.5 py-1 md:px-3 md:py-2 border border-vgbrown/80 rounded-full text-xs md:text-sm  font-semibold hover:text-white hover:bg-vgbrown"
                 >
                   Contact us
                 </a>
