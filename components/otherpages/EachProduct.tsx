@@ -5,14 +5,14 @@ import Image from "next/image";
 const EachProduct = (product: Product) => {
   return (
     <div className="group rounded-3xl h-full">
-      <div className="bg-white relative rounded-2xl overflow-hidden border border-gray-200 hover-lift h-full flex flex-col items-start justify-between">
+      <div className="bg-white relative rounded-lg md:rounded-2xl overflow-hidden border border-gray-200 hover-lift h-full flex flex-col items-start justify-between">
         <div className="relative overflow-hidden w-full">
           <Image
             src={product.image}
             alt={product.name}
             width={300}
             height={300}
-            className="w-full h-100 object-cover group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-50 md:h-100 object-cover group-hover:scale-105 transition-transform duration-500"
           />
           {/* <div className="absolute top-6 right-6">
             <span className="bg-vgreen text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
@@ -20,13 +20,13 @@ const EachProduct = (product: Product) => {
             </span>
           </div> */}
         </div>
-        <div className="p-8 flex flex-col justify-between h-fit">
+        <div className="p-4 md:p-8 flex flex-col justify-between h-fit">
           <div>
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-3xl font-bold text-vgbrown">
+              <h3 className="text-2xl md:text-3xl font-bold text-vgbrown">
                 {product.name}
               </h3>
-              <div className="flex items-center space-x-2">
+              <div className="hidden md:flex items-center space-x-2">
                 <Leaf size={20} color="#679550" />
                 <Globe size={20} color="#679550" />
               </div>
@@ -67,11 +67,11 @@ const EachProduct = (product: Product) => {
             </div>
           </div> */}
           <a
-            className=" border border-vgreen text-lg text-vgreen px-8 py-4 rounded-lg hover:bg-vgreen transform hover:text-white transition-all duration-300 inline-flex items-center w-full justify-center gap-2"
+            className=" border border-vgreen text-sm md:text-lg text-vgreen px-8 py-2 md:py-4 rounded-sm md:rounded-lg hover:bg-vgreen transform hover:text-white transition-all duration-300 inline-flex items-center w-full justify-center gap-2"
             href="/contact"
           >
             Request Quote
-            <ArrowUpRight size={20} />
+            <ArrowUpRight size={20} className="size-4 md:size-5" />
           </a>
         </div>
       </div>

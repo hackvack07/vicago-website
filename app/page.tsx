@@ -10,7 +10,7 @@ import TestimonialCarousel from "@/components/homePage/Testimonial";
 import Values from "@/components/homePage/Values";
 
 export const metadata: Metadata = {
-  title: "Trusted Agricultural Commodity Trading",
+  title: "Vicago Group | Agricultural Commodity Trading",
   description:
     "Vicago Group connects premium Nigerian cocoa and Canadian wheat to global markets. 45+ years of operational history, 10,000+ farmers, 150,000+ metric tons traded.",
   alternates: {

@@ -25,7 +25,7 @@ export const products: Product[] = [
   {
     id: 2,
     name: "Wheat – Canadian Western Amber Durum (CWAD)",
-    image: "/images/product-wheat.jpg",
+    image: "/images/product-wheat1.jpg",
     description:
       "Premium Canadian durum, ideal for semolina production, pasta manufacturing and couscous",
     locate: "Canada",

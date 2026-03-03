@@ -189,7 +189,7 @@ const Navbar = () => {
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-gray-800 text-2xl font-medium py-4 border-b border-gray-100 hover:text-vgbrown transition-colors duration-200"
+              className={`${pathname === link.href ? "text-vgreen" : "text-gray-500"} text-xl font-medium py-4 border-b border-gray-100 hover:text-vgbrown transition-colors duration-200`}
               style={{
                 transitionDelay: menuOpen ? `${i * 60}ms` : "0ms",
               }}
