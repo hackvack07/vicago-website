@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Sourcing, financing, and trading premium agricultural commodities. 45+ years of operational history across Nigeria and Canada.",
     images: [
       {
-        url: "/images/hero-bg-1.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Vicago Group — Agricultural Commodity Trading",
@@ -83,6 +83,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="lVNXN1RvZW3Q84wUSm5FOBTShCd4OhGlo8J2sD9LPXU"
+        />
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
