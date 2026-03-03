@@ -1,8 +1,4 @@
-export default function JsonLd({
-  data,
-}: {
-  data: Record<string, unknown>;
-}) {
+export default function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
     <script
       type="application/ld+json"
@@ -38,9 +34,27 @@ export const organizationSchema = {
   sameAs: [],
   contactPoint: {
     "@type": "ContactPoint",
+    email: "info@vicagogroup.com",
     contactType: "customer service",
-    url: "https://vicagogroup.com/contact",
   },
+   address: [
+    {
+      "@type": "PostalAddress",
+      streetAddress: "333 Broad Street, Odode",
+      addressLocality: "Idanre",
+      addressRegion: "Ondo State",
+      postalCode: "340108",
+      addressCountry: "NG"
+    },
+    {
+      "@type": "PostalAddress",
+      streetAddress: "556 Marlee Avenue",
+      addressLocality: "Toronto",
+      addressRegion: "Ontario",
+      postalCode: "M6B 0B1",
+      addressCountry: "CA"
+    }
+  ]
 };
 
 /** WebPage schema for sub-pages */

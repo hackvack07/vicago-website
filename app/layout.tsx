@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import LenisProvider from "@/components/LenisProvider";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import PageTransition from "@/components/ui/PageTransition";
 
 const SITE_URL = "https://vicagogroup.com";
@@ -10,7 +7,7 @@ const SITE_URL = "https://vicagogroup.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Vicago Group — Trusted Agricultural Commodity Trading",
+    default: "Vicago Group | Agricultural Commodity Trading",
     template: "%s | Vicago Group",
   },
   description:
@@ -40,7 +37,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Vicago Group",
-    title: "Vicago Group — Trusted Agricultural Commodity Trading",
+    title: "Vicago Group | Agricultural Commodity Trading",
     description:
       "Sourcing, financing, and trading premium agricultural commodities. 45+ years of operational history across Nigeria and Canada.",
     images: [
@@ -54,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vicago Group — Trusted Agricultural Commodity Trading",
+    title: "Vicago Group | Agricultural Commodity Trading",
     description:
       "Sourcing, financing, and trading premium agricultural commodities across global markets.",
     images: ["/images/hero-bg-1.jpg"],

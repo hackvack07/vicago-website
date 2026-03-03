@@ -24,9 +24,9 @@ import Navbar from "@/components/Navbar";
 export default function App() {
   return (
     <>
+      <JsonLd data={organizationSchema} />
       <Navbar />
       <main className="relative w-full overflow-x-hidden overflow-y-hidden ">
-        <JsonLd data={organizationSchema} />
         <Hero />
         <Partners />
         <About />
