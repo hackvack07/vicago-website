@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
 import PageTransition from "@/components/ui/PageTransition";
@@ -100,7 +101,10 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          {children}
+          <Analytics />
+        </PageTransition>
       </body>
     </html>
   );
