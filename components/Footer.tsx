@@ -30,6 +30,10 @@ const FooterLinks = [
     link: "/about",
   },
   {
+    name: "Platform",
+    link: "/platform",
+  },
+  {
     name: "Product",
     link: "/product",
   },

@@ -7,6 +7,7 @@ import Link from "next/link";
 
 const NAV_LINKS = [
   { label: "About us", href: "/about" },
+  { label: "Platform", href: "/platform" },
   { label: "Product", href: "/product" },
   { label: "CSR", href: "/csr" },
   { label: "Blog", href: "/blog" },
@@ -96,14 +97,21 @@ const Navbar = () => {
           </div>
 
           <div className="flex gap-4 items-center">
-            {/* Desktop Contact Button */}
+            <a
+              href="https://trade.vicago.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-block rounded-full border border-vgbrown bg-vgbrown px-4 py-2 text-sm font-semibold text-white transition-all duration-300 hover:bg-transparent hover:text-vgbrown"
+            >
+              Start trading
+            </a>
+
             <a
               href="/contact"
               className="hidden md:inline-block rounded-full border border-gray-400 px-3 py-2 text-sm font-semibold hover:text-white hover:bg-vgbrown hover:border-vgbrown transform transition-all duration-300"
             >
               Contact us
             </a>
-
             {/* Mobile Hamburger ↔ X animated icon */}
             <style>{`
               .hamburger-btn {
@@ -200,9 +208,20 @@ const Navbar = () => {
         </nav>
 
         {/* Contact Button */}
-        <div style={{ marginTop: "auto", padding: "0 32px 40px 32px" }}>
+        <div
+          style={{
+            marginTop: "auto",
+            padding: "0 32px 40px 32px",
+            display: "flex",
+            flexDirection: "column",
+            gap: "16px",
+          }}
+        >
+          {/* Primary button */}
           <a
-            href="/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://trade.vicago.org"
             onClick={() => setMenuOpen(false)}
             style={{
               display: "block",
@@ -214,6 +233,26 @@ const Navbar = () => {
               fontSize: "16px",
               fontWeight: 600,
               color: "#ffffff",
+            }}
+          >
+            Start trading
+          </a>
+
+          {/* Secondary button */}
+          <a
+            href="/contact"
+            onClick={() => setMenuOpen(false)}
+            style={{
+              display: "block",
+              width: "100%",
+              textAlign: "center",
+              borderRadius: "9999px",
+              backgroundColor: "transparent",
+              border: "1px solid #815331",
+              padding: "15px",
+              fontSize: "16px",
+              fontWeight: 600,
+              color: "#815331",
             }}
           >
             Contact us

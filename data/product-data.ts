@@ -22,13 +22,34 @@ export const products: Product[] = [
     ],
   },
 
+  // {
+  //   id: 2,
+  //   name: "Wheat – Canadian Western Amber Durum (CWAD)",
+  //   image: "/images/product-wheat1.jpg",
+  //   description:
+  //     "Premium Canadian durum, ideal for semolina production, pasta manufacturing and couscous",
+  //   locate: "Canada",
+  //   features: [
+  //     "Multiple wheat varieties",
+  //     "Food-grade quality",
+  //     "High protein content",
+  //     "Reliable logistics",
+  //   ],
+  //   specification: [
+  //     { title: "Protein", value: "≤ 11.5%" },
+  //     { title: "Test Weight", value: "≥ 76kg/hl" },
+  //     { title: "Moisture", value: "≤ 14.5%" },
+  //     { title: "Origin", value: "Western Canada" },
+  //   ],
+  // },
   {
     id: 2,
-    name: "Wheat – Canadian Western Amber Durum (CWAD)",
-    image: "/images/product-wheat1.jpg",
+    name: "Soybean",
+    image:
+      "https://i0.wp.com/www.agriculturenigeria.com/wp-content/uploads/2013/05/Soya-Bean-1.jpg",
     description:
-      "Premium Canadian durum, ideal for semolina production, pasta manufacturing and couscous",
-    locate: "Canada",
+      "Premium soybeans sourced from reliable Nigerian farms, ideal for oil extraction and protein production.",
+    locate: "Nigeria",
     features: [
       "Multiple wheat varieties",
       "Food-grade quality",
@@ -44,12 +65,11 @@ export const products: Product[] = [
   },
   {
     id: 3,
-    name: "Soybean",
-    image:
-      "https://i0.wp.com/www.agriculturenigeria.com/wp-content/uploads/2013/05/Soya-Bean-1.jpg",
+    name: "Wheat – Canadian Western Amber Durum (CWAD)",
+    image: "/images/product-wheat1.jpg",
     description:
-      "Premium soybeans sourced from reliable Nigerian farms, ideal for oil extraction and protein production.",
-    locate: "Nigeria",
+      "Premium Canadian durum, ideal for semolina production, pasta manufacturing and couscous",
+    locate: "Canada",
     features: [
       "Multiple wheat varieties",
       "Food-grade quality",
