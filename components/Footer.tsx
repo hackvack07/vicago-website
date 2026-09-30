@@ -30,8 +30,8 @@ const FooterLinks = [
     link: "/about",
   },
   {
-    name: "Platform",
-    link: "/platform",
+    name: "Trade",
+    link: "/trade",
   },
   {
     name: "Product",
