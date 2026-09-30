@@ -3,9 +3,6 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import Button from "../ui/Button";
-
-const TRADE_URL = "https://trade.vicago.org";
 
 export default function PlatformHero() {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -53,10 +50,6 @@ export default function PlatformHero() {
       <div className="max-margin grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10 items-center">
         {/* Left: copy */}
         <div className="flex flex-col items-start gap-6">
-          {/* <span className="platform-hero-animate inline-block rounded-full bg-white border border-vgreen/20 px-4 py-1.5 text-xs font-semibold text-vgreen shadow-sm">
-            New: The Vicago Trade Platform
-          </span> */}
-
           <h1 className="platform-hero-animate text-4xl sm:text-5xl lg:text-6xl lg:leading-16 font-normal font-grotesque leading-tight text-vgreen max-w-xl">
             Trade commodities in bulk. Pay with confidence.
           </h1>
@@ -65,25 +58,10 @@ export default function PlatformHero() {
 
           <p className="platform-hero-animate text-base text-gray-500 max-w-lg leading-7">
             Vicago now connects verified buyers and sellers on one secure
-            marketplace, so bulk deals on cocoa beans, soybeans and Canadian
-            wheat close faster, with quality and payment protected from source
+            marketplace, so bulk deals on cocoa beans, soybeans and other
+            product close faster, with quality and payment protected from source
             to final buyer.
           </p>
-
-          {/* <div className="platform-hero-animate flex flex-col sm:flex-row gap-4">
-            <Button
-              title="I want to buy"
-              variant="green"
-              link={`${TRADE_URL}/marketplace`}
-              target="_blank"
-            />
-            <Button
-              title="I want to sell"
-              variant="brown"
-              link={TRADE_URL}
-              target="_blank"
-            />
-          </div> */}
         </div>
 
         {/* Right: image + floating order card */}

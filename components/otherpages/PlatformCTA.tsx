@@ -65,8 +65,8 @@ export default function PlatformCTA() {
           </h2>
           <p className="text-sm md:text-base text-white/80 leading-7 max-w-lg">
             Join the Vicago Trade platform, where verified buyers and sellers
-            exchange goods for secured payment, safely and transparently,
-            every time.
+            exchange goods for secured payment, safely and transparently, every
+            time.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ export default function PlatformCTA() {
             <div className="flex flex-col items-center gap-3 shrink-0">
               <div className="relative size-20 sm:size-24 md:size-28 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
                 <Image
-                  src="/images/cocoa-tree-much.jpg"
+                  src="/csr/csr-1.jpg"
                   alt="Seller shipping verified commodities"
                   fill
                   className="object-cover"
@@ -119,7 +119,7 @@ export default function PlatformCTA() {
             <div className="flex flex-col items-center gap-3 shrink-0">
               <div className="relative size-20 sm:size-24 md:size-28 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
                 <Image
-                  src="/images/about-hero.jpg"
+                  src="/blog/blog-1.jpg"
                   alt="Buyer paying with secured funds"
                   fill
                   className="object-cover"

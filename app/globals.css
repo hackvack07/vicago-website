@@ -172,3 +172,69 @@ html {
   transform: translateY(-8px);
   box-shadow: 0 20px 40px #00000026;
 }
+
+/* Add this to globals.css */
+
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes reveal-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes reveal-from-right {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Only runs where scroll-driven animations are supported and the user has not
+   asked for reduced motion. Everywhere else the content is simply visible. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+      animation-name: reveal-up;
+      animation-timing-function: ease-out;
+      /* "backwards" applies the start state before the animation begins, but
+         releases the element afterwards so hover-lift transforms still work */
+      animation-fill-mode: backwards;
+      animation-timeline: view();
+      /* starts as the element enters the viewport, finishes when it is
+         about 45% of the way in. --i offsets each item to create a stagger */
+      animation-range: entry calc(var(--i, 0) * 6%) entry
+        calc(45% + var(--i, 0) * 6%);
+    }
+
+    /* Sideways slides only on desktop, so phones never get horizontal scroll */
+    @media (min-width: 1024px) {
+      .reveal-left {
+        animation-name: reveal-from-left;
+      }
+      .reveal-right {
+        animation-name: reveal-from-right;
+      }
+    }
+  }
+}

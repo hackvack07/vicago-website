@@ -52,6 +52,7 @@ export default function PlatformHowItWorks() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 70%",
+          end: "bottom 10%",
         },
       });
     }, sectionRef);
@@ -60,15 +61,18 @@ export default function PlatformHowItWorks() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-white py-20 md:py-28">
+    <section
+      ref={sectionRef}
+      className="relative w-full bg-white py-20 md:py-28"
+    >
       <div className="max-margin flex flex-col items-center gap-14">
         <div className="how-it-works-heading text-center max-w-2xl flex flex-col gap-4 items-center">
           <h2 className="text-4xl md:text-5xl font-normal text-vgbrown">
             How the platform works
           </h2>
           <p className="text-base text-gray-500">
-            One place to find a counterparty, agree terms and get paid,
-            without chasing paperwork across borders.
+            One place to find a counterparty, agree terms and get paid, without
+            chasing paperwork across borders.
           </p>
         </div>
 
