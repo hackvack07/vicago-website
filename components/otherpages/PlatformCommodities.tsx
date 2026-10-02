@@ -96,7 +96,6 @@ const COMMODITIES = [
   {
     name: "Cocoa beans",
     origin: "Nigeria",
-    price: "From US$3,100 / MT",
     image: "/images/about-cocoa.jpg",
     description:
       "Sourced from Nigerian farms, meeting international standards for chocolate and confectionery production.",
@@ -104,7 +103,6 @@ const COMMODITIES = [
   {
     name: "Wheat, CWAD",
     origin: "Nigeria & Canada",
-    price: "From US$1,500 / MT",
     image: "/images/product-wheat1.jpg",
     description:
       "Canadian Western Amber Durum, ideal for semolina production, pasta manufacturing and couscous.",
@@ -112,7 +110,6 @@ const COMMODITIES = [
   {
     name: "Soybean",
     origin: "Nigeria",
-    price: "From US$1,575 / MT",
     image: "/images/soyabeans.jpg",
     description:
       "Premium soybeans sourced from reliable Nigerian farms, ideal for oil extraction and protein production.",
@@ -120,7 +117,6 @@ const COMMODITIES = [
   {
     name: "Wheat Flour",
     origin: "Canada & Nigeria",
-    price: "From US$1,300 / MT",
     image: "/images/wheat-flour.avif",
     description:
       "Finely milled wheat flour, suitable for baking and general culinary use.",
@@ -128,7 +124,6 @@ const COMMODITIES = [
   {
     name: "Durum Semolina",
     origin: "Canada & Nigeria",
-    price: "From US$2,300 / MT",
     image: "/images/durum-semolina.avif",
     description:
       "High-quality durum semolina, perfect for pasta production and other culinary applications.",
@@ -136,15 +131,13 @@ const COMMODITIES = [
   {
     name: "Wheat, CWRS",
     origin: "Canada & Nigeria",
-    price: "From US$2,300 / MT",
     image: "/images/about-wheat.jpg",
     description:
       "Canada Western Red Spring, premium wheat for milling, baking and food processing worldwide.",
   },
   {
-    name: "Whole GrainDurum Semolina",
+    name: "Whole Grain Durum Semolina",
     origin: "Canada & Nigeria",
-    price: "From US$2,000 / MT",
     image: "/images/whole-grain.avif",
     description:
       "Whole grain durum semolina, ideal for nutritious pasta and other culinary uses.",
@@ -218,9 +211,6 @@ export default function PlatformCommodities() {
                   <h3 className="text-lg font-bold text-vgbrown">
                     {item.name}
                   </h3>
-                  <p className="text-xs font-semibold text-vgreen mt-1">
-                    {item.price}
-                  </p>
                 </div>
                 <p className="text-sm text-gray-500 leading-6 flex-1">
                   {item.description}

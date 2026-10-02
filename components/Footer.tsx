@@ -34,10 +34,6 @@ const FooterLinks = [
     link: "/trade",
   },
   {
-    name: "Product",
-    link: "/product",
-  },
-  {
     name: "CSR",
     link: "/csr",
   },
