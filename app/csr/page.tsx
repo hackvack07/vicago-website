@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Real, measurable actions: financing farmers, improving yields, and simplifying access to global markets.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/csr",
+    canonical: "https://www.vicagogroup.com/csr",
   },
 };
 

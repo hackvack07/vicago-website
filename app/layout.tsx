@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import PageTransition from "@/components/ui/PageTransition";
 
-const SITE_URL = "https://vicagogroup.com";
+const SITE_URL = "https://www.vicagogroup.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

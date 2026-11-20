@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Premium Nigerian cocoa, Canadian wheat, and soybeans — sourced from farm to global buyer.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/product",
+    canonical: "https://www.vicagogroup.com/product",
   },
 };
 

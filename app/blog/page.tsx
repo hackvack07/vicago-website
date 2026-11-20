@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "Insights on agricultural commodity trading, market trends, and sustainable farming.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/blog",
+    canonical: "https://www.vicagogroup.com/blog",
   },
 };
 

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       "Our story, mission, and vision — 45+ years building agricultural value chains that support food security and global trade.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/about",
+    canonical: "https://www.vicagogroup.com/about",
   },
 };
 

@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://vicagogroup.com/sitemap.xml",
+    sitemap: "https://www.vicagogroup.com/sitemap.xml",
   };
 }

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       "Trade cocoa, soybeans and Canadian wheat in bulk on Vicago's new B2B marketplace, connecting verified buyers and sellers with secure payments.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/trade",
+    canonical: "https://www.vicagogroup.com/trade",
   },
 };
 

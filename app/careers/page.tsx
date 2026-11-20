@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Build your career in agricultural commodity trading. Explore open positions at Vicago Group.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/careers",
+    canonical: "https://www.vicagogroup.com/careers",
   },
 };
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Reach out for commodity sourcing, trading partnerships, or general inquiries.",
   },
   alternates: {
-    canonical: "https://vicagogroup.com/contact",
+    canonical: "https://www.vicagogroup.com/contact",
   },
 };
 
