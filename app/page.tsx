@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Vicago Group connects premium Nigerian cocoa and Canadian wheat to global markets. 45+ years of operational history, 10,000+ farmers, 150,000+ metric tons traded.",
   alternates: {
-    canonical: "https://vicagogroup.com",
+    canonical: "https://www.vicagogroup.com",
   },
 };
 
