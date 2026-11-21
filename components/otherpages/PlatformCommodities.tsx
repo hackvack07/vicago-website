@@ -98,21 +98,21 @@ const COMMODITIES = [
     origin: "Nigeria",
     image: "/images/about-cocoa.jpg",
     description:
-      "Sourced from Nigerian farms, meeting international standards for chocolate and confectionery production.",
+      "Quality-grade cocoa beans carefully sourced and selected for chocolate production, confectionery and cocoa processing.",
   },
   {
     name: "Wheat, CWAD",
     origin: "Nigeria & Canada",
     image: "/images/product-wheat1.jpg",
     description:
-      "Canadian Western Amber Durum, ideal for semolina production, pasta manufacturing and couscous.",
+      "Canadian Western Amber Durum wheat, valued for its high protein content and excellent suitability for semolina, pasta and couscous production.",
   },
   {
     name: "Soybean",
     origin: "Nigeria",
     image: "/images/soyabeans.jpg",
     description:
-      "Premium soybeans sourced from reliable Nigerian farms, ideal for oil extraction and protein production.",
+      "Quality soybeans with excellent protein and oil content, suitable for food processing, edible oil extraction and animal feed production.",
   },
   {
     name: "Wheat Flour",
@@ -186,9 +186,10 @@ export default function PlatformCommodities() {
             Commodities you can trade today
           </h2>
           <p className="text-base text-gray-500">
-            The same premium grades we have always sourced, now open to trade
-            directly on the platform, priced in US dollars, naira or Canadian
-            dollars.
+            Explore premium-grade agricultural commodities sourced directly from
+            trusted suppliers by Vicago. Browse available products, check
+            quantities and request quotations, with pricing in US dollars, naira
+            or Canadian dollars.
           </p>
         </div>
 
@@ -221,7 +222,7 @@ export default function PlatformCommodities() {
                   rel="noopener noreferrer"
                   className="border border-vgreen text-sm text-vgreen px-4 py-2 rounded-lg hover:bg-vgreen hover:text-white transition-all duration-300 inline-flex items-center justify-center gap-2"
                 >
-                  View listings
+                  Request a quote
                 </a>
               </div>
             </div>

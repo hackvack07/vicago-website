@@ -12,8 +12,8 @@ export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Vicago Group",
-  url: "https://vicagogroup.com",
-  logo: "https://vicagogroup.com/logo.png",
+  url: "https://www.vicagogroup.com",
+  logo: "https://www.vicagogroup.com/logo.png",
   description:
     "Leading agricultural commodity trading company with 45+ years of operational history. We source, finance, and trade premium Nigerian cocoa and Canadian wheat.",
   foundingDate: "1980",
@@ -37,14 +37,14 @@ export const organizationSchema = {
     email: "info@vicagogroup.com",
     contactType: "customer service",
   },
-   address: [
+  address: [
     {
       "@type": "PostalAddress",
       streetAddress: "333 Broad Street, Odode",
       addressLocality: "Idanre",
       addressRegion: "Ondo State",
       postalCode: "340108",
-      addressCountry: "NG"
+      addressCountry: "NG",
     },
     {
       "@type": "PostalAddress",
@@ -52,9 +52,9 @@ export const organizationSchema = {
       addressLocality: "Toronto",
       addressRegion: "Ontario",
       postalCode: "M6B 0B1",
-      addressCountry: "CA"
-    }
-  ]
+      addressCountry: "CA",
+    },
+  ],
 };
 
 /** WebPage schema for sub-pages */
@@ -68,7 +68,7 @@ export function webPageSchema(name: string, description: string, url: string) {
     isPartOf: {
       "@type": "WebSite",
       name: "Vicago Group",
-      url: "https://vicagogroup.com",
+      url: "https://www.vicagogroup.com",
     },
   };
 }

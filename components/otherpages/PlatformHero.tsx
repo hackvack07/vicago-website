@@ -57,10 +57,11 @@ export default function PlatformHero() {
           <span className="platform-hero-animate block h-1 w-14 rounded-full bg-vgbrown" />
 
           <p className="platform-hero-animate text-base text-gray-500 max-w-lg leading-7">
-            Vicago now connects verified buyers and sellers on one secure
-            marketplace, so bulk deals on cocoa beans, soybeans and other
-            product close faster, with quality and payment protected from source
-            to final buyer.
+            Vicago sources quality cocoa beans, soybeans and other agricultural
+            products directly from trusted suppliers, making them readily
+            available to buyers. We simplify bulk purchasing with reliable
+            supply, quality assurance and secure payments from source to final
+            delivery.
           </p>
         </div>
 
