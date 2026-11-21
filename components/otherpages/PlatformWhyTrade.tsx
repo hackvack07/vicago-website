@@ -4,23 +4,23 @@ import type { CSSProperties } from "react";
 const FEATURES = [
   {
     color: "bg-vgreen",
-    title: "Secure escrow-style payments",
-    text: "Orders are paid by Letter of Credit or Cash Against Documents, and funds only move once agreed delivery conditions are confirmed.",
+    title: "Secure payments",
+    text: "Every order follows a transparent payment process with secure payment options, including Letter of Credit and Cash Against Documents, based on agreed transaction terms.",
   },
   {
     color: "bg-vgbrown",
-    title: "Verified counterparties",
-    text: "Every seller submits incorporation, export licence and tax documents, reviewed by our team before they can list or place an order.",
+    title: "Trusted suppliers",
+    text: "We work with verified suppliers whose business registration, relevant licences and supporting documents are reviewed before sourcing their products.",
   },
   {
     color: "bg-vgreen",
-    title: "Quality you can trace",
-    text: "Grades, origin and listing details travel with every order, from farm gate to final buyer.",
+    title: "Assured product quality",
+    text: "We prioritise product quality by verifying grades, quantities and origin to ensure buyers receive products that meet agreed specifications.",
   },
   {
     color: "bg-vgbrown",
-    title: "Global market reach",
-    text: "Access verified buyers and suppliers across Nigeria and Canada, trading in USD, naira or Canadian dollars, through one account.",
+    title: "Reliable supply and delivery",
+    text: "We coordinate the supply and delivery of agricultural commodities to buyers, providing access to products sourced across Nigeria and international markets, with pricing in USD, naira or Canadian dollars.",
   },
 ];
 

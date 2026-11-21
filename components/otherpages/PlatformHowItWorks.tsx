@@ -10,20 +10,20 @@ const STEPS = [
   {
     number: "1",
     color: "bg-vgreen",
-    title: "List or request",
-    text: "Sellers list available volumes and grades. Buyers post requests or browse verified listings on the marketplace.",
+    title: "Source products",
+    text: "Vicago sources available products, volumes and grades directly from verified suppliers. Buyers can submit a Request for Quotation (RFQ) for the quantities and grades they need.",
   },
   {
     number: "2",
     color: "bg-vgbrown",
-    title: "Agree and fund",
-    text: "Confirm price, quantity and delivery terms. Payment is arranged by Letter of Credit or Cash Against Documents and held until conditions are met.",
+    title: "Confirm order and payment",
+    text: "Vicago confirms the buyer's requested products, quantity, pricing and delivery terms. Buyers receive an order confirmation and arrange payment through the available secure payment options.",
   },
   {
     number: "3",
     color: "bg-vgreen",
-    title: "Deliver and get paid",
-    text: "Once delivery and quality checks are confirmed, Vicago arranges shipment, and funds are released to the seller.",
+    title: "Deliver and receive goods",
+    text: "Vicago coordinates the delivery of products to the buyer, ensuring agreed quality and quantity requirements are met before completing the order.",
   },
 ];
 
